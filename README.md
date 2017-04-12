@@ -1,6 +1,6 @@
 # 使用 Scrapy 爬取 当当网 特产信息
 数据包括: "价格"、"名称"、"连接"、"评论次数"
-#####使用说明
+
 首先克隆服务代码
 ```
 $ git clone https://github.com/slzcc/Scrapy-DangDang.git
