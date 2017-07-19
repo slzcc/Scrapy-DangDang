@@ -2,11 +2,14 @@
 import scrapy
 from autopjt.items import AutopjtItem
 from scrapy.http import Request
+from scrapy_redis.spiders import RedisSpider
 
-class DangdangSpider(scrapy.Spider):
+
+class DangdangSpider(RedisSpider):
     name = "dangdang"
     allowed_domains = ["dangdang.com"]
-    start_urls = ['http://category.dangdang.com/pg1-cid4002203.html']
+    redis_key = 'dangdang:start_urls'
+
 
     def parse(self, response):
         item=AutopjtItem()
