@@ -102,5 +102,5 @@ SCHEDULER_PERSIST = True
 
 SCHEDULER_QUEUE_CLASS = "scrapy_redis.queue.SpiderPriorityQueue"
 
-REDIS_HOST = os.getenv('REDIS_DB_HOST')
-REDIS_PORT = int(os.getenv('REDIS_DB_PORT'))
+REDIS_HOST = os.getenv('REDIS_HOST')
+REDIS_PORT = int(os.getenv('REDIS_PORT'))
