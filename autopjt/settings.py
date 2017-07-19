@@ -90,6 +90,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
 
 CONCURRENT_REQUESTS = int(os.getenv('CONCURRENT_REQUESTS'))
 DOWNLOAD_DELAY = int(os.getenv('DOWNLOAD_DELAY'))
