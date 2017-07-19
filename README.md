@@ -1,5 +1,9 @@
 # 使用 Scrapy 爬取 当当网 特产信息
 数据包括: "价格"、"名称"、"连接"、"评论次数"
+Docker 启动方式
+```
+$ docker run -d -e REDIS_DB_HOST=127.0.0.1 registry.aliyuncs.com/slzcc/scrapy-dangdang:scrapy_redis
+```
 
 首先克隆服务代码
 ```
