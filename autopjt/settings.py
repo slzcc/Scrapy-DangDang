@@ -66,8 +66,8 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'autopjt.pipelines.AutopjtPipeline': 300,
-   'scrapy_redis.pipelines.RedisPipeline': 300,
+   # 'autopjt.pipelines.AutopjtPipeline': 300,
+   'scrapy_redis.pipelines.RedisPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
